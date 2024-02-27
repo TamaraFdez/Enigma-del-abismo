@@ -1,0 +1,258 @@
+@import url('https://fonts.cdnfonts.com/css/hello-bonia-serif');
+@import url('https://fonts.cdnfonts.com/css/fresh-sunday');
+
+:root {
+    --purple: #A47CF3;
+    --dark-purple: #683FEA;
+    --dark-blue: #162440;
+    --grey: #2F4C73;
+    --gold: #FAD269;
+    --brown: #A64724;
+    --primary: #fff;
+    --secondary: #333;
+}
+
+* {
+    box-sizing: border-box;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100dvh;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gold);
+
+}
+
+a:hover {
+    text-shadow: #fdfae0b2 0px 0px 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #fff;
+    font-size: x-large;
+
+}
+
+.btn:hover {
+    font-size: 1.8rem;
+    box-shadow: 1px 1px 20px var(--purple);
+}
+
+header {
+    text-align: center;
+    color: var(--gold);
+    background-color: var(--dark-blue);
+    padding: 20px;
+    border-bottom: 2px solid var(--primary);
+
+    h1 {
+
+        color: #e6c79e;
+        font-family: 'Hello Bonia Serif', sans-serif;
+
+        .highcase {
+            font-size: 2.5rem;
+            color: var(--purple);
+
+        }
+    }
+}
+
+main {
+    padding: 4rem 1rem;
+    background-image: url(../images/alchemyrefiner_alchemymagic_0_aaefd9fb-00f7-45e1-9ec0-f50249b86ae1_0.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 72dvh;
+
+
+    .main-container {
+
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        padding: 1rem;
+
+
+
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            border: 1px solid var(--primary);
+            padding: 1rem;
+            border-radius: 15px;
+            background-color: #162440be;
+
+
+            .legend {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                color: var(--primary);
+                color: #ffe5c3;
+
+                details {
+                    color: var(--primary);
+                }
+
+            }
+
+            .game {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                text-align: center;
+
+                .display {
+                    border: 1px solid var(--purple);
+                    color: var(--dark-purple);
+                    background-color: var(--primary);
+                    padding: 10px;
+                }
+
+                .botones {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                }
+
+                label {
+
+
+                    input[type="text"] {
+                        font-size: 16px;
+                        padding: 10px 10px 10px 5px;
+                        display: block;
+                        width: 200px;
+                        border: none;
+                        border-bottom: 1px solid var(--dark-purple);
+                        background: transparent;
+                        color: var(--purple);
+                        text-align: center;
+                        border-radius: 10px;
+                    }
+
+                    input:focus {
+                        outline: none;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: var(--dark-blue);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 2px solid var(--primary);
+
+    p {
+        font-family: 'Fresh Sunday', sans-serif;
+        font-weight: 100;
+
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid var(--primary);
+        padding: 10px;
+
+
+
+        div {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+
+            li {
+                padding-bottom: 0.3rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 786px) {
+
+
+    main {
+
+        background-image: url(../images/alchemyrefiner_alchemymagic_2_dfafa6aa-17d6-4f71-97fd-04591424d775_0.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+
+
+        .main-container {
+            max-width: 1200px;
+            margin: auto;
+            font-size: 1.3rem;
+
+            .main-content {
+                padding: 3rem;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: 1.3rem;
+
+    .footer-container {
+        align-items: center;
+    }
+}

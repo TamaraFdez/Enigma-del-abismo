@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Enigma del Abismo</title>
+  </head>
+  <body>
+    <header id="title">
+      <h1>
+        El Desafío de las Sombras:
+        <span class="highcase"> Enigma del Abismo</span>
+      </h1>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="main-content">
+          <div class="legend">
+            <p>
+              Cuenta la leyenda que en el rincón más sombrío del reino... Quien
+              se atreve a jugar debe descifrar el Enigma del Abismo, un número
+              entre el 1 y el 100, en apenas 7 intentos. Desde el comienzo,
+              susurros oscuros lo envuelven, y cada fallo agudiza la penumbra.
+              Si el enigma persiste al séptimo intento, las sombras cobraran
+              vida.
+            </p>
+            <p>
+              Mas, aquel que conquiste el enigma antes de ese fatídico intento
+              disipará las sombras, ganando así el desafío. La leyenda, como un
+              imán, atrae a los valientes hacia la oscuridad en busca de la
+              victoria sobre el misterio.
+            </p>
+            <details>
+              <summary>Instrucciones</summary>
+              <p>Ingresa un número entre 1 y 100.</p>
+              <p>Haz clic en "Start" para empezar a jugar.</p>
+              <p>
+                Recibirás pistas sobre si el número mágico es mayor o menor.
+              </p>
+              <p>Tienes 7 intentos para acertar. ¡Buena suerte!</p>
+            </details>
+          </div>
+          <div class="game">
+            <div class="display" id="display"></div>
+            <label
+              >Tu número mágico:
+              <input
+                type="text"
+                id="numero-usuario"
+                pattern="[0-9]+"
+                title="Por favor, ingresa un número entero."
+                required
+            /></label>
+            <div class="intentos" id="intentos"></div>
+            <div class="botones">
+              <input
+                type="button"
+                id="start"
+                name="start"
+                value="Start"
+                class="btn"
+              />
+              <input
+                type="button"
+                id="reboot"
+                name="reboot"
+                value="Reiniciar"
+                class="btn"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="mi-nombre">
+        <i class="bx bxl-sketch"></i> Creación de Tamara Fernandez.
+      </p>
+      <div class="footer-container">
+        <div>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="bx-fw bx bxl-facebook-square"></i>Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bx-fw bx bxl-twitter"></i>Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx-fw bx bxl-instagram"></i>Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="bx-fw bx bxl-github"></i>GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div>
+            Contacto:
+            <a href="#">Email</a>
+          </div>
+          <div>
+            Otros Trabajos:
+            <ul>
+              <li>
+                <a href="#">Historia Random</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
