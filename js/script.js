@@ -69,9 +69,9 @@ function startGame(e) {
 
 function rebootGame() {
   intentos = 0;
-  display.innerText = "";
+  display.innerText = " ";
   numerosElegidos = [];
-  displayIntentos.innerHTML = "";
+  displayIntentos.innerHTML = " ";
   document.querySelector("#numero-usuario").value = "";
   numRandom = Math.floor(Math.random() * 100) + 1;
   start.value = "Start";
